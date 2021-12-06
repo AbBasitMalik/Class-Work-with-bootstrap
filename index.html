@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hospital</title>
+
+
+  <!-- bootstrap links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+    </script>
+  <script>
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+  });
+</script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <!-- CSS links -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="">Health</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer" data-toggle="tooltip" data-placement="bottom" title="Contact">Contact</a>
+            </li>
+            
+            <li class="nav-item list-inline">
+             <!--  <a  href="#pricing"></a> -->
+              <!-- <a class="nav-link" href="#" data-toggle="tooltip" title="About">About</a> -->
+              <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="About">About</a>
+            </li>
+            <li class="nav-item">
+             <!-- <a class="nav-link" href="#">Location</a> -->
+
+             <a class="nav-link" href="#" title="Location" data-toggle="popover" data-trigger="focus" data-content="It was so great to hear from you today and it was such weird timing,he said. This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago. Id love to get together and tell you about it if youre up for a cup of coffee,he continued, laying the trap hed been planning for years.">Location</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Donation</a>
+                  
+              <div class="container">
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4>Donatios</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+
+                    <div class="progress" style="height:20px; width:200px">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+                   </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Modal body..
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+    <!-- donations end -->
+
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Investors</a>
+            </li>
+
+            <li class="nav-item" class="drop">
+              <div class="btn-group">
+            <button type="button" class="btn" >Identity</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Doctor</a>
+              <a class="dropdown-item" href="#">Nurse</a>
+              <a class="dropdown-item" href="#">Cleaner</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Patint</a>
+            </div>
+             </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Welcome to Health management system</h1>
+          <h6>Download Mobail App</h6>
+          <button type="button" class="btn btn-outline-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
+          <a href="#" title="Download" data-toggle="popover" data-trigger="focus" data-content="It was so great to hear from you today and it was such weird timing,he said. This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago. Id love to get together and tell you about it if youre up for a cup of coffee,he continued, laying the trap hed been planning for years."> <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button></a>
+        </div>
+        <div class="col-lg-6">
+          <img src="doctor3.jpg" alt="doctor" class="title-image">
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="features-box col-lg-4">
+        <i class="icon fas fa-user-cog fa-4x"></i>
+        <h3>Administrator</h3>
+      </div>
+
+      <div class="features-box col-lg-4">
+       <i class=" icon fas fa-book-open  fa-4x"></i>
+        <h3>Registration</h3>  
+      
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%" >60%</div>
+    </div>
+    </div>
+
+      <div class="features-box col-lg-4">
+        <i class=" icon fas fa-handshake fa-4x"></i>
+        <h3>Reception</h3>
+      <div class="progress">
+       <div class="progress-bar bg-success" style="width:30%"></div>
+      </div><br>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonial" class="carousel slide" data-ride="carousel" data-interval="1000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.”</h1>
+          <img class="testimoial-image" src="william.jpg" alt="william.jpg">
+          <em>William Londen</em>
+        </div>
+        <div class="carousel-item">
+          <h1 class="testimonial-text">“The human body has been designed to resist an infinite number of changes and attacks brought about by its environment. The secret of good health lies in successful adjustment to changing stresses on the body.”</h1>
+          <img class="testimoial-image" src="harry.jpg" alt="Harry J. Johnson">
+          <em>Harry J. Johnson</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- doctor -->
+
+
+  <section id="doctor">
+
+    <h2>Best Doctors Of The Year</h2>
+  
+
+    <div class="row  center-text">
+      <div class="col-lg-4 col-md-6">
+
+        <div class="card">
+          <div class="card-header">
+            <img src="sadiqahmad.gif">
+             <h4>Sadiq Ahmed</h4>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-lg btn-block btn-outline-info">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <img src="ain-kenneth.gif">
+            <h4>Kenneth B. Ain</h4>
+          </div>
+          <div class="card-body">
+            
+         
+            <button type="button" class="btn btn-lg btn-block btn-outline-info">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <img src="akafuah-rhoda.jpg">
+            <h4>Rhoda A. Akafuah</h4>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-lg btn-block btn-outline-info">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Health Care Place Here.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+<i class=" footer-icon fab fa-facebook-f"></i>
+<i class=" footer-icon fab fa-twitter-square"></i>
+<i class=" footer-icon fab fa-instagram"></i>
+<i class=" footer-icon fas fa-envelope"></i>
+    <p>© Since 1998 Health</p>
+
+  </footer>
+
+
+</body>
+
+</html>
+
